@@ -1,21 +1,23 @@
+/* Define custom font variables outside of @layer */
+:root {
+  --font-jetbrains-mono: "JetBrains Mono", monospace;
+  --primary-color: #1c1c22; /* Define primary background color */
+}
+
+/* Import Tailwind's base, components, and utilities */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@layer base {
+  /* Apply the custom font to the body */
+  body {
+    @apply font-primary bg-background text-white leading-loose;
+    background-color: var(--primary-color);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* Use the custom primary background color */
   }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  h1 {
+    @apply text-[48px] xl:text-[80px] leading-[1.1] font-semi-bold;
+  }
 }
