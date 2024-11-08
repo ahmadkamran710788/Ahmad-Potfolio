@@ -8,6 +8,16 @@ import { FiDownload } from "react-icons/fi";
 import Stats from "@/components/stats";
 
 export default function Home() {
+  const handleDownload = () => {
+    const link = document.createElement("a");
+
+    // Path to the CV file in the public folder
+    link.href = "/CV/AhmadCV.pdf"; // Replace with the actual path to your CV
+    link.download = "My_CV.pdf"; // The default filename for the download
+
+    // Programmatically trigger the download
+    link.click();
+  };
   return (
     <section className="h-full">
       <div className="container mx-auto">
@@ -31,6 +41,7 @@ export default function Home() {
                 variant="outline"
                 size="lg"
                 className="uppercase flex items-center gap-2"
+                onClick={handleDownload}
               >
                 <span>Download CV </span>
                 <FiDownload className="text-xl" />
@@ -47,8 +58,8 @@ export default function Home() {
           <div className="order-1 xl:order-none mb-8 xl:mb:0">
             <Photo />
           </div>
-
-          <div></div>
+          {/* 
+          <div></div> */}
         </div>
       </div>
       <Stats />
