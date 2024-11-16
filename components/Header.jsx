@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { Button } from "./ui/button";
-import Nav from "./NAv";
+import Nav from "./Nav";
 import MobileNav from "./MobileNav";
 
 // import { Span } from "next/dist/trace";

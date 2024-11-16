@@ -5,7 +5,7 @@ import Photo from "@/components/Photo";
 import Image from "next/image";
 // import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
-import Stats from "@/components/stats";
+import Stats from "@/components/Stats";
 
 export default function Home() {
   const handleDownload = () => {
