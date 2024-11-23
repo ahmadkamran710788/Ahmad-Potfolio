@@ -17,61 +17,61 @@ import WorkSliderButton from "@/components/WorkSliderButton";
 const projectData = [
   {
     num: "01",
-    category: "frontend",
-    title: "project1",
+    category: "Full Stack",
+    title: "The Entertainer",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+      "The Entertainer (Voucher Management System) is a streamlined solution for managing and distributing digital vouchers and discounts efficiently. It enables businesses to create, track, and redeem vouchers while ensuring security and reliability. The system includes features for real-time validation, user-friendly redemption, and detailed reporting, enhancing customer engagement and simplifying promotional campaign management.",
     stack: [
-      { name: "HTML5" },
+      { name: "NodeJs" },
       { name: "CSS3" },
       { name: "JavaScript" },
-      { name: "React" },
+      { name: "Next" },
       { name: "Node.js" },
+      { name: "PostgreSql" },
     ],
-    image: "/assets/work/thumb1.png", // Added extension
+    image: "/assets/work/thumb6.png", // Added extension
     live: "",
     github: "",
   },
   {
     num: "02",
-    category: "Devops",
-    title: "project2",
+    category: "Full Stack",
+    title: "Zatca (Top Notepad)",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+      " The ZATCA Electronic Invoice website in Saudi Arabia allows businesses and individuals to create and verify electronic invoices effortlessly. Utilizing special QR codes compliant with ZATCA's regulations, it ensures the authenticity of invoices. No sign-up is required, making it accessible and user-friendly. The platform enhances efficiency, safety, and adherence to tax regulations.",
     stack: [
-      { name: "HTML5" },
-      { name: "CSS3" },
-      { name: "JavaScript" },
+      { name: "TypeScript" },
       { name: "React" },
       { name: "Node.js" },
+      { name: "PostgreSQl" },
+      { name: "SQLite" },
     ],
-    image: "/assets/work/thumb2.png", // Added extension
+    image: "/assets/work/thumb7.png", // Added extension
     live: "",
     github: "",
   },
   {
     num: "03",
-    category: "Backend",
-    title: "project3",
+    category: "Full Stack",
+    title: "NetBy",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+      "Revolutionizing networking, our web app is a professional hub merging students, universities, and companies. Students access LinkedIn-like features, with university endorsements enhancing their profiles. Universities guide students through job readiness, offering interview preparation and career support.",
     stack: [
-      { name: "HTML5" },
-      { name: "CSS3" },
+      { name: "Tailwind CSS" },
       { name: "JavaScript" },
       { name: "React" },
       { name: "Node.js" },
     ],
-    image: "/assets/work/thumb3.png", // Added extension
+    image: "/assets/work/thumb8.png", // Added extension
     live: "",
     github: "",
   },
   {
     num: "04",
-    category: "UX",
-    title: "project1",
+    category: "Full Stack",
+    title: "FIKIA",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+      " Revolutionizing networking, our web app is a professional hub merging students, universities, and companies. Students access LinkedIn-like features, with university endorsements enhancing their profiles. Universities guide students through job readiness, offering interview preparation and career support.",
     stack: [
       { name: "HTML5" },
       { name: "CSS3" },
@@ -79,7 +79,7 @@ const projectData = [
       { name: "React" },
       { name: "Node.js" },
     ],
-    image: "/assets/work/thumb3.png", // Added extension
+    image: "/assets/work/thumb9.png", // Added extension
     live: "",
     github: "",
   },
@@ -166,14 +166,14 @@ export default function Work() {
                 return (
                   <SwiperSlide key={index} className="w-full">
                     <div className="h-[500px] relative group flex justify-center items-center bg-background">
-                      {/* overlay */}
-                      <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10 "></div>
+                      {/* Overlay */}
+                      <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                       <div className="relative w-full h-full">
                         <Image
                           src={project.image}
-                          width={2000} // Set larger width
-                          height={800} // Set larger height
-                          className="object-cover"
+                          layout="fill" // Ensures the image spans the entire container
+                          objectFit="cover" // Makes sure the image covers the entire container
+                          className="absolute"
                           alt=""
                         />
                       </div>

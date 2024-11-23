@@ -89,25 +89,28 @@ const services = [
     num: "01",
     title: "Web Development",
     Description:
-      "hahhahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh",
+      "Our web development service specializes in creating high-performance applications using Next.js, React, Node.js, and TypeScript. We deliver responsive, scalable solutions that enhance user experience and streamline development processes. Trust us to build your web project with cutting-edge technology for optimal results",
     href: "",
   },
   {
     num: "02",
     title: "UX/UI Design",
-    Description: "hahhahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh",
+    Description:
+      "Our UX/UI design service leverages Figma and Adobe tools to create intuitive, engaging interfaces that enhance user experience. We focus on user-centric design principles, ensuring your application is both visually appealing and easy to navigate. Partner with us to transform your ideas into stunning, functional designs that resonate with your audience.",
     href: "",
   },
   {
     num: "03",
     title: "Backend Development",
-    Description: "hahhahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh",
+    Description:
+      "Our backend development service utilizes Node.js, NestJS, and Spring Boot to build robust, scalable server-side applications. We focus on creating efficient APIs and seamless integrations that enhance performance and reliability. With a commitment to best practices and security, we deliver solutions tailored to your specific needs. Let us help you power your applications with our expert backend services.",
     href: "",
   },
   {
     num: "04",
-    title: "Logo Design",
-    Description: "hahhahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh",
+    title: "Software Requirements",
+    Description:
+      " Our software requirements service focuses on gathering and analyzing client needs to define clear, actionable specifications for development projects. We employ best practices to ensure all functional and non-functional requirements are documented comprehensively. Partner with us to create a solid foundation for your software development success. ",
     href: "",
   },
 ];

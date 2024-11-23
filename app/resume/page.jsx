@@ -15,6 +15,7 @@ import {
   SiSpringboot,
   SiNestjs,
   SiNextdotjs,
+  SiMaterialdesign,
 } from "react-icons/si";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
@@ -64,28 +65,8 @@ const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My experience ",
   description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    " I'm a skilled MERN stack developer who's passionate about Next.js, specializing in building modern web applications. My expertise lies in using MongoDB, Express.js, React, Node.js and Nest.js to create dynamic and responsive apps that deliver exceptional user experiences. I'm particularly adept at backend development, using SQLite and PostgreSQL to build secure and efficient databases. I'm committed to staying updated with the latest technology trends to ensure that every project I work on meets the highest standards of innovation and performance.  ",
   item: [
-    {
-      company: "Saluq",
-      Position: "Associate Engineer",
-      duration: "February 2024- November 2024",
-    },
-    {
-      company: "Saluq",
-      Position: "Associate Engineer",
-      duration: "February 2024- November 2024",
-    },
-    {
-      company: "Saluq",
-      Position: "Associate Engineer",
-      duration: "February 2024- November 2024",
-    },
-    {
-      company: "Saluq",
-      Position: "Associate Engineer",
-      duration: "February 2024- November 2024",
-    },
     {
       company: "Saluq",
       Position: "Associate Engineer",
@@ -98,38 +79,8 @@ const education = {
   icon: "/assets/resume/cap.svg",
   title: "My education ",
   description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. ",
+    "I hold a Bachelor's degree in Software Engineering from COMSATS University, where I developed a strong foundation in software development, project management, and systems analysis. My education equipped me with the skills to tackle complex challenges and create innovative solutions in the tech industry. ",
   item: [
-    {
-      Institution: "Comsats Univerisity",
-      degree: " Bachelor Software Engineering",
-      duration: " 2020 - 2024",
-    },
-    {
-      Institution: "Comsats Univerisity",
-      degree: " Bachelor Software Engineering",
-      duration: " 2020 - 2024",
-    },
-    {
-      Institution: "Comsats Univerisity",
-      degree: " Bachelor Software Engineering",
-      duration: " 2020 - 2024",
-    },
-    {
-      Institution: "Comsats Univerisity",
-      degree: " Bachelor Software Engineering",
-      duration: " 2020 - 2024",
-    },
-    {
-      Institution: "Comsats Univerisity",
-      degree: " Bachelor Software Engineering",
-      duration: " 2020 - 2024",
-    },
-    {
-      Institution: "Comsats Univerisity",
-      degree: " Bachelor Software Engineering",
-      duration: " 2020 - 2024",
-    },
     {
       Institution: "Comsats Univerisity",
       degree: " Bachelor Software Engineering",
@@ -141,42 +92,70 @@ const education = {
 const skills = {
   title: "My Skills",
   description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    "I possess a strong skill set in web development, specializing in technologies such as Node.js, Next.js, and React. Proficient in backend frameworks like NestJS and Spring Boot, I excel at building scalable and efficient APIs. Additionally, I have expertise in UX/UI design using Figma and Adobe tools, enabling me to create intuitive user experiences. My analytical problem-solving abilities and teamwork ensure successful project delivery.",
   skillList: [
     {
       icon: <FaHtml5 />,
       name: "Html",
     },
     {
-      icon: <FaHtml5 />,
-      name: "Html",
+      icon: <FaCss3 />,
+      name: "Css",
     },
     {
-      icon: <FaHtml5 />,
-      name: "Html",
+      icon: <FaJs />,
+      name: "JavaScript",
     },
     {
-      icon: <FaHtml5 />,
-      name: "Html",
+      icon: <FaJava />,
+      name: "Java",
     },
     {
-      icon: <FaHtml5 />,
-      name: "Html",
+      icon: <FaNodeJs />,
+      name: "NodeJs",
     },
     {
-      icon: <FaHtml5 />,
-      name: "Html",
+      icon: <FaReact />,
+      name: "React",
     },
     {
-      icon: <FaHtml5 />,
-      name: "Html",
+      icon: <SiTailwindcss />,
+      name: "Tailwindcss",
     },
     {
-      icon: <FaHtml5 />,
-      name: "Html",
+      icon: <SiExpress />,
+      name: "Express",
+    },
+    {
+      icon: <SiSpringboot />,
+      name: "SpringBoot",
+    },
+    {
+      icon: <SiNestjs />,
+      name: "NestJS",
+    },
+    {
+      icon: <SiNextdotjs />,
+      name: "Next",
     },
   ],
 };
+
+// import {
+//   FaHtml5,
+//   FaCss3,
+//   FaJs,
+//   FaJava,
+//   FaNodeJs,
+//   FaReact,
+// } from "react-icons/fa";
+// import {
+//   SiTailwindcss,
+//   SiExpress,
+//   SiSpringboot,
+//   SiNestjs,
+//   SiNextdotjs,
+// } from "react-icons/si";
 export default function Resume() {
   return (
     <motion.div
@@ -204,7 +183,7 @@ export default function Resume() {
             <TabsContent value="experience" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{experience.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0"> 
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {experience.description}
                 </p>
                 <ScrollArea className="h-[400px]">
