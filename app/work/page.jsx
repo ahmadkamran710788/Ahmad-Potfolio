@@ -300,7 +300,7 @@ export default function Work() {
               {projectData.map((project, index) => {
                 return (
                   <SwiperSlide key={index} className="w-full">
-                    <div className="h-[700px] relative group flex justify-center items-center bg-pink-50/20">
+                    <div className="h-[500px] relative group flex justify-center items-center bg-background">
                       {/* overlay */}
                       <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10 "></div>
                       <div className="relative w-full h-full">
