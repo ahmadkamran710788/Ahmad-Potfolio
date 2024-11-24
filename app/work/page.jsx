@@ -110,7 +110,7 @@ export default function Work() {
               </div>
               {/* Project category */}
               <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
-                {project.category} Project
+                {project.title} 
               </h2>
               <p className="text-white/60 break-words mx-auto xl:mx-0">
                 {project.description}
