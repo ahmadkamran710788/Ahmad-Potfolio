@@ -7,8 +7,9 @@ import {
   FaYoutube,
   FaTwitter,
   FaSkype,
+  FaWhatsapp,
 } from "react-icons/fa";
-import { SiUpwork, SiFiverr } from "react-icons/si";
+import { SiUpwork, SiFiverr, SiWhatsapp } from "react-icons/si";
 // import { FaUpwork, FaFiverr } from "react-icons/fa";
 
 const social = [
@@ -18,9 +19,13 @@ const social = [
     path: "https://www.linkedin.com/in/ahmad-kamran-13272b205/",
   },
   { icon: <FaSkype />, path: "https://join.skype.com/invite/tL0d4osHYeV3" },
+  { icon: <SiWhatsapp />, path: "https://wa.me/923055519806" },
   // { icon: <FaTwitter />, path: "" },
-  { icon: <SiUpwork />, path: "" },
-  { icon: <SiFiverr />, path: "" },
+  {
+    icon: <SiUpwork />,
+    path: "https://www.upwork.com/freelancers/~013bb7a4c009e30283?s=1017484851352698949",
+  },
+  { icon: <SiFiverr />, path: "https://www.fiverr.com/s/bdzgvLX" },
 ];
 export default function Social({ containerStyle, iconStyle }) {
   return (
