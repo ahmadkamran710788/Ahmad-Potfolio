@@ -25,7 +25,6 @@ const social = [
     icon: <SiUpwork />,
     path: "https://www.upwork.com/freelancers/~013bb7a4c009e30283?s=1017484851352698949",
   },
-  { icon: <SiFiverr />, path: "https://www.fiverr.com/s/bdzgvLX" },
 ];
 export default function Social({ containerStyle, iconStyle }) {
   return (
