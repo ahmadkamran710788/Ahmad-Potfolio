@@ -70,7 +70,12 @@ const experience = {
     {
       company: "Saluq",
       Position: "Associate Engineer",
-      duration: "February 2024- November 2024",
+      duration: "February 2024 - August 2024",
+    },
+    {
+      company: "Whizpool",
+      Position: "Associate Engineer",
+      duration: "August 2024 - November 2024",
     },
   ],
 };
